@@ -21,7 +21,7 @@ html { scroll-behavior: smooth; }
   background: var(--gold);
   color: var(--charcoal);
   padding: .6rem 1.4rem;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .9rem; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; text-decoration: none;
   z-index: 9999;
@@ -36,7 +36,7 @@ html { scroll-behavior: smooth; }
 }
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   background: var(--charcoal);
   color: var(--off-white);
@@ -66,8 +66,9 @@ nav ul {
   align-items: center;
 }
 nav ul li a {
-  color: var(--off-white); text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .9rem; font-weight: 500; letter-spacing: .08em;
+  text-decoration: none;
   text-transform: uppercase;
   transition: color .3s;
 }
@@ -144,7 +145,7 @@ nav ul li a:hover { color: var(--gold-light); }
 .hero-text { position: relative; z-index: 1; }
 .hero-eyebrow {
   display: inline-block;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .8rem; letter-spacing: .3em; text-transform: uppercase;
   color: var(--gold); margin-bottom: 1.2rem;
   padding: .3rem .9rem;
@@ -169,7 +170,7 @@ nav ul li a:hover { color: var(--gold-light); }
 .btn-primary {
   background: var(--gold); color: var(--charcoal);
   padding: .9rem 2rem; border: none; cursor: pointer;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1rem; font-weight: 700; letter-spacing: .1em;
   text-transform: uppercase; text-decoration: none;
   transition: background .3s, transform .2s;
@@ -181,7 +182,7 @@ nav ul li a:hover { color: var(--gold-light); }
   background: transparent; color: var(--off-white);
   padding: .9rem 2rem; border: 1.5px solid rgba(249,246,240,0.4);
   cursor: pointer;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1rem; font-weight: 600; letter-spacing: .1em;
   text-transform: uppercase; text-decoration: none;
   transition: border-color .3s, color .3s;
@@ -192,7 +193,7 @@ nav ul li a:hover { color: var(--gold-light); }
 .btn-dark {
   background: var(--charcoal); color: var(--off-white);
   padding: 1rem 2.5rem; border: none; cursor: pointer;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1rem; font-weight: 700; letter-spacing: .1em;
   text-transform: uppercase; text-decoration: none;
   transition: background .3s;
@@ -234,13 +235,13 @@ nav ul li a:hover { color: var(--gold-light); }
   font-size: 3.4rem; font-weight: 900; color: var(--gold); line-height: 1;
 }
 .center-badge .big-label {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .75rem; letter-spacing: .2em; text-transform: uppercase;
   color: rgba(249,246,240,0.6); margin-top: .4rem;
 }
 .corner-tag {
   position: absolute;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .7rem; letter-spacing: .15em;
   text-transform: uppercase; color: var(--gold-light);
   background: rgba(28,28,28,0.9);
@@ -252,7 +253,7 @@ nav ul li a:hover { color: var(--gold-light); }
 /* ── SECTION BASE ── */
 section { padding: 6rem 2.5rem; }
 .section-label {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .75rem; letter-spacing: .35em; text-transform: uppercase;
   color: var(--gold); margin-bottom: .8rem;
 }
@@ -311,7 +312,7 @@ section { padding: 6rem 2.5rem; }
   font-size: 1.2rem; color: var(--gold);
 }
 .point-text h4 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1rem; font-weight: 700; letter-spacing: .06em;
   text-transform: uppercase; color: var(--gold-light);
   margin-bottom: .3rem;
@@ -348,7 +349,7 @@ section { padding: 6rem 2.5rem; }
   margin-bottom: .5rem;
 }
 .pillar-card h3 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.2rem; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; color: var(--gold-light);
   margin-bottom: .8rem;
@@ -405,7 +406,7 @@ section { padding: 6rem 2.5rem; }
   line-height: 1;
 }
 .stat-label {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: .75rem; letter-spacing: .2em;
   text-transform: uppercase; color: rgba(249,246,240,0.5);
   margin-top: .5rem;

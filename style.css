@@ -6,7 +6,7 @@
   --gold-light: #E8B84B;
   --forest: #2A5C2A;
   --forest-dark: #1A3D1A;
-  --charcoal: #1C1C1C;
+  --charcoal: #111111;
   --off-white: #F9F6F0;
   --warm-gray: #888;
 }
@@ -37,6 +37,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Barlow", sans-serif;
+  font-weight: 500;
   background: var(--charcoal);
   color: var(--off-white);
   overflow-x: hidden;
@@ -113,10 +114,19 @@ nav ul li a:hover { color: var(--gold-light); }
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
+  /* To add a hero photo: replace 'none' below with url("media/hero.jpg") */
+  background-image: none;
+  background-size: cover; background-position: center right;
+  background-color: var(--charcoal);
+}
+.hero-bg::before {
+  content: "";
+  position: absolute; inset: 0;
   background:
     radial-gradient(ellipse at 70% 30%, rgba(42,92,42,0.35) 0%, transparent 60%),
-    radial-gradient(ellipse at 20% 80%, rgba(200,148,42,0.2) 0%, transparent 50%),
-    var(--charcoal);
+    radial-gradient(ellipse at 20% 80%, rgba(200,148,42,0.2) 0%, transparent 50%);
+  /* When a photo is added, this overlay darkens it: change above alphas or use:
+     background: linear-gradient(to right, rgba(17,17,17,0.92) 45%, rgba(17,17,17,0.4)); */
 }
 .hero-bg::after {
   content: "";
@@ -141,9 +151,10 @@ nav ul li a:hover { color: var(--gold-light); }
   border: 1px solid rgba(200,148,42,0.4);
 }
 .hero-text h1 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2.8rem, 5vw, 4.4rem);
-  line-height: 1.08; font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  line-height: 1.0; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .03em;
   margin-bottom: 1.6rem;
 }
 .hero-text h1 span { color: var(--gold); }
@@ -246,9 +257,10 @@ section { padding: 6rem 2.5rem; }
   color: var(--gold); margin-bottom: .8rem;
 }
 .section-title {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 700; line-height: 1.15;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700; line-height: 1.05;
+  text-transform: uppercase; letter-spacing: .04em;
   margin-bottom: 1.2rem;
 }
 .section-sub {
@@ -256,7 +268,7 @@ section { padding: 6rem 2.5rem; }
   color: rgba(249,246,240,0.65); max-width: 580px;
 }
 .gold-line {
-  width: 60px; height: 3px;
+  width: 60px; height: 4px;
   background: var(--gold); margin: 1.5rem 0;
 }
 
@@ -405,9 +417,10 @@ section { padding: 6rem 2.5rem; }
   text-align: center; padding: 5rem 2.5rem;
 }
 #cta-footer h2 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--charcoal); font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--charcoal); font-weight: 700;
+  text-transform: uppercase; letter-spacing: .04em;
   margin-bottom: 1rem;
 }
 #cta-footer p { color: rgba(28,28,28,0.7); font-size: 1rem; margin-bottom: 2rem; }

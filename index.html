@@ -3,17 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Deliberate Man  A community for men who choose to live with purpose, lead with intention, and build a legacy worth leaving.">
-  <title>The Deliberate Man</title>
+  <meta name="description" content="The Deliberate Man — A community for men who choose to live with purpose, lead with intention, and build a legacy worth leaving.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#C8942A">
+  <title>The Deliberate Man — Live With Purpose. Lead With Intention.</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://the-deliberate-man.vercel.app">
+
+  <!-- Favicon -->
+  <link rel="icon" href="media/logo.jpeg" type="image/jpeg">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Deliberate Man">
+  <meta property="og:title" content="The Deliberate Man — Live With Purpose. Lead With Intention.">
+  <meta property="og:description" content="A community for men who choose to live with purpose, lead with intention, and build a legacy worth leaving.">
+  <meta property="og:url" content="https://the-deliberate-man.vercel.app">
+  <meta property="og:image" content="https://the-deliberate-man.vercel.app/media/logo.jpeg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Deliberate Man — Live With Purpose. Lead With Intention.">
+  <meta name="twitter:description" content="A community for men who choose to live with purpose, lead with intention, and build a legacy worth leaving.">
+  <meta name="twitter:image" content="https://the-deliberate-man.vercel.app/media/logo.jpeg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "The Deliberate Man",
+    "url": "https://the-deliberate-man.vercel.app",
+    "logo": "https://the-deliberate-man.vercel.app/media/logo.jpeg",
+    "description": "A community for men who choose to live with purpose, lead with intention, and build a legacy worth leaving.",
+    "sameAs": ["https://www.instagram.com/thedeliberateman"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+234-813-515-0127",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts (preconnect for faster load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <!-- NAV -->
-<nav>
+<nav aria-label="Main navigation">
   <a href="#hero" class="logo-link">
-    <img src="media/logo.jpeg" alt="The Deliberate Man" class="logo">
+    <img src="media/logo.jpeg" alt="The Deliberate Man" class="logo" width="52" height="52">
   </a>
   <ul id="nav-links">
     <li><a href="#manifesto">Manifesto</a></li>
@@ -30,6 +80,8 @@
     <span></span>
   </button>
 </nav>
+
+<main id="main-content">
 
 <!-- HERO -->
 <section id="hero">
@@ -143,7 +195,7 @@
     <div class="gold-line" style="margin: 1.5rem auto;"></div>
     <p class="section-sub">We love the women who show up  some just want to see what the men are learning! <span aria-hidden="true">&#x1F601;</span> Either way, there is growth for everyone here. Follow along on Instagram.</p>
     <a href="https://www.instagram.com/thedeliberateman" target="_blank" rel="noopener noreferrer" class="ig-link">
-      <img src="media/Instagram logo.jfif" alt="Instagram" class="ig-icon-img">
+      <img src="media/Instagram logo.jfif" alt="Instagram" class="ig-icon-img" width="28" height="28" loading="lazy">
       Follow @thedeliberateman on Instagram
     </a>
   </div>
@@ -180,10 +232,12 @@
   </a>
 </div>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <a href="#hero" class="logo-link">
-    <img src="media/logo.jpeg" alt="The Deliberate Man" class="logo-sm">
+    <img src="media/logo.jpeg" alt="The Deliberate Man" class="logo-sm" width="44" height="44" loading="lazy">
   </a>
   <p>&#169; 2026 The Deliberate Man. All rights reserved.</p>
   <div class="footer-links">
@@ -195,7 +249,7 @@
 
 <!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/2348135150127" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
-  <img src="media/whatsapp logo.png" alt="WhatsApp">
+  <img src="media/whatsapp logo.png" alt="WhatsApp" width="60" height="60" loading="lazy">
 </a>
 
 <script>

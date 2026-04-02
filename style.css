@@ -13,6 +13,28 @@
 
 html { scroll-behavior: smooth; }
 
+/* ── SKIP LINK (Accessibility) ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--gold);
+  color: var(--charcoal);
+  padding: .6rem 1.4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: .9rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; text-decoration: none;
+  z-index: 9999;
+  transition: top .2s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ── KEYBOARD FOCUS STYLES ── */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   background: var(--charcoal);
@@ -33,7 +55,6 @@ nav {
 .logo-link { display: inline-flex; align-items: center; text-decoration: none; }
 nav img.logo {
   height: 52px;
-  mix-blend-mode: multiply;
   border-radius: 4px;
 }
 
@@ -413,7 +434,6 @@ footer {
 }
 footer img.logo-sm {
   height: 44px;
-  mix-blend-mode: multiply;
   border-radius: 4px;
 }
 footer p { font-size: .8rem; color: rgba(249,246,240,0.35); }

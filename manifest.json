@@ -1,0 +1,21 @@
+{
+  "name": "The Deliberate Man",
+  "short_name": "Deliberate Man",
+  "description": "A community for men who choose to live with purpose, lead with intention, and build a legacy worth leaving.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1C1C1C",
+  "theme_color": "#C8942A",
+  "icons": [
+    {
+      "src": "media/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "media/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

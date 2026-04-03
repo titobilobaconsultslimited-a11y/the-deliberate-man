@@ -538,6 +538,9 @@ footer a { color: var(--gold); text-decoration: none; font-size: .8rem; transiti
 footer a:hover { color: var(--gold-light); }
 .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; }
 
+/* ── SUBSCRIPTION SECTION ── */
+#subscription { padding: 0; background: var(--charcoal); }
+
 /* ── FOOTER WHATSAPP LOGO ── */
 .footer-wa-logo { display: flex; align-items: center; }
 .footer-wa-logo img { width: 28px; height: 28px; border-radius: 50%; transition: transform .3s; }

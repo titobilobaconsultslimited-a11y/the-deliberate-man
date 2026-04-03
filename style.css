@@ -561,25 +561,64 @@ footer a:hover { color: var(--gold-light); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  #hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; }
-  .hero-visual { display: none; }
-  .manifesto-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .pillars-grid { grid-template-columns: 1fr; }
-  .stats-row { flex-direction: column; }
-  .stat-item { border-right: none; border-bottom: 1px solid rgba(200,148,42,0.1); }
-  section { padding: 4rem 1.5rem; }
-  footer { flex-direction: column; align-items: flex-start; }
-  .footer-links { flex-direction: column; gap: .8rem; }
-
+  /* Nav */
+  nav { padding: .8rem 1.2rem; }
   nav ul {
     display: none;
     flex-direction: column;
     position: absolute; top: 100%; left: 0; right: 0;
     background: rgba(28,28,28,0.97);
-    padding: 1rem 2rem 2rem;
+    padding: 1rem 1.5rem 2rem;
     gap: 1rem;
     border-bottom: 1px solid rgba(200,148,42,0.2);
   }
   nav ul.open { display: flex; }
   .hamburger { display: flex; }
+
+  /* Global section spacing */
+  section { padding: 3.5rem 1.2rem; }
+
+  /* Hero */
+  #hero { grid-template-columns: 1fr; padding: 5rem 1.2rem 3rem; text-align: center; }
+  .hero-visual { display: none; }
+  .hero-text h1 { font-size: clamp(2.4rem, 9vw, 3.5rem); }
+  .hero-text p { font-size: 1rem; max-width: 100%; }
+  .hero-actions { justify-content: center; flex-direction: column; align-items: center; }
+  .hero-actions a { width: 100%; text-align: center; }
+
+  /* Manifesto */
+  .manifesto-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .manifesto-quote { font-size: 1.3rem; padding-left: 1.2rem; }
+
+  /* Pioneer */
+  .pioneer-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+  .pioneer-img { max-width: 260px; margin: 0 auto; }
+  .pioneer-img-border { display: none; }
+  .pioneer-text p { max-width: 100%; }
+
+  /* Pillars */
+  .pillars-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .pillar-card { padding: 1.8rem 1.4rem; }
+
+  /* Stats */
+  .stats-row { flex-direction: column; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(200,148,42,0.1); padding: 1.5rem 1rem; }
+  .stat-num { font-size: 2.4rem; }
+
+  /* Section titles */
+  .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+
+  /* CTA footer */
+  #cta-footer { padding: 3.5rem 1.2rem; }
+  #cta-footer h2 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.2rem 3rem;
+    gap: .8rem;
+  }
+  .footer-links { flex-direction: row; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 }

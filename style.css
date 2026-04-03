@@ -11,7 +11,7 @@
   --warm-gray: #888;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
 
 /* ── SKIP LINK (Accessibility) ── */
 .skip-link {
@@ -41,6 +41,8 @@ body {
   background: var(--charcoal);
   color: var(--off-white);
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* ── NAV ── */
@@ -561,6 +563,9 @@ footer a:hover { color: var(--gold-light); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
+  /* Prevent any element from causing horizontal scroll */
+  * { max-width: 100%; }
+  img { height: auto; }
   /* Nav */
   nav { padding: .8rem 1.2rem; }
   nav ul {

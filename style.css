@@ -533,7 +533,7 @@ footer img.logo-sm {
   height: 44px;
   border-radius: 4px;
 }
-footer p { font-size: .8rem; color: rgba(249,246,240,0.35); }
+footer p { font-size: .8rem; color: rgba(249,246,240,0.35); text-align: center; }
 footer a { color: var(--gold); text-decoration: none; font-size: .8rem; transition: color .25s; }
 footer a:hover { color: var(--gold-light); }
 .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; }

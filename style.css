@@ -579,7 +579,12 @@ footer a:hover { color: var(--gold-light); }
   section { padding: 3.5rem 1.2rem; }
 
   /* Hero */
-  #hero { grid-template-columns: 1fr; padding: 5rem 1.2rem 3rem; text-align: center; }
+  #hero {
+    grid-template-columns: 1fr;
+    min-height: unset;
+    padding: 5rem 1.2rem 3rem;
+    text-align: center;
+  }
   .hero-visual { display: none; }
   .hero-text h1 { font-size: clamp(2.4rem, 9vw, 3.5rem); }
   .hero-text p { font-size: 1rem; max-width: 100%; }

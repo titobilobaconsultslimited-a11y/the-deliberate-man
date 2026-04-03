@@ -543,6 +543,19 @@ footer a:hover { color: var(--gold-light); }
 .footer-wa-logo img { width: 28px; height: 28px; border-radius: 50%; transition: transform .3s; }
 .footer-wa-logo:hover img { transform: scale(1.15); }
 
+/* ── FOOTER ICON LOGOS (Instagram, Email) ── */
+.footer-icon-logo {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px;
+  background: rgba(249,246,240,0.08);
+  border-radius: 50%;
+  color: var(--off-white);
+  transition: background .3s, transform .3s;
+}
+.footer-icon-logo img { width: 28px; height: 28px; border-radius: 50%; display: block; }
+.footer-icon-logo svg { display: block; }
+.footer-icon-logo:hover { background: rgba(200,148,42,0.2); transform: scale(1.15); color: var(--gold); }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   #hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; }
